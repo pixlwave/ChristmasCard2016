@@ -8,7 +8,7 @@ class DrawViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    @IBAction func clearDrawing(_ sender: Any) {
+    @IBAction func clearDrawing() {
         drawView.image = nil
         Kaleidoscope.lastRender = nil
     }

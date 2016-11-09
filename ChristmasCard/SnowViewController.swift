@@ -26,4 +26,7 @@ class SnowViewController: UIViewController {
         sceneView.presentScene(snowScene)
     }
     
+    @IBAction func restart() {
+        presentingViewController?.dismiss(animated: true)
+    }
 }
