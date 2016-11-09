@@ -3,8 +3,13 @@ import SpriteKit
 
 class Kaleidoscope {
     
-    static var ciContext = CIContext()
-    static var ciFilter = CIFilter(name: "CIKaleidoscope")!
+    static let ciContext = CIContext()
+    static let kaleidoscopeFilter = CIFilter(name: "CIKaleidoscope")!
+    static let kaleidoscopeAngle = 0.125 * Double.pi
+    static let kaleidoscopeCenter = CIVector(x: 0, y: 0)
+    
+    static let transformFilter = CIFilter(name: "CIAffineTransform")!
+    static let transformRotation = CGAffineTransform(rotationAngle: CGFloat(0.375 * Double.pi))
     
     static var lastRender: UIImage?
     
@@ -12,13 +17,16 @@ class Kaleidoscope {
         guard let cgImage = sourceImage.cgImage else { return nil }
         
         let ciImage = CIImage(cgImage: cgImage)
-        let center = CIVector(x: 0, y: 0)
-        ciFilter.setValue(ciImage, forKey: kCIInputImageKey)
-        ciFilter.setValue(0.125 * Double.pi, forKey: kCIInputAngleKey)
-        ciFilter.setValue(center, forKey: kCIInputCenterKey)
+        kaleidoscopeFilter.setValue(ciImage, forKey: kCIInputImageKey)
+        kaleidoscopeFilter.setValue(kaleidoscopeAngle, forKey: kCIInputAngleKey)
+        kaleidoscopeFilter.setValue(kaleidoscopeCenter, forKey: kCIInputCenterKey)
+        guard let kaleidoscopeOutput = kaleidoscopeFilter.outputImage else { return nil }
         
-        guard let outputImage = ciFilter.outputImage else { return nil }
-        guard let resultCGImage = ciContext.createCGImage(outputImage, from: sourceImage.size.pythagRect) else { return nil }
+        transformFilter.setValue(kaleidoscopeOutput, forKey: "inputImage")
+        transformFilter.setValue(transformRotation, forKey: "inputTransform")
+        guard let transformOutput = transformFilter.outputImage else { return nil }
+        
+        guard let resultCGImage = ciContext.createCGImage(transformOutput, from: sourceImage.size.pythagRect) else { return nil }
         
         lastRender = UIImage(cgImage: resultCGImage)
         
