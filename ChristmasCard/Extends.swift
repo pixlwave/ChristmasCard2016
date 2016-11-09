@@ -11,8 +11,9 @@ extension CGSize {
         return CGSize(width: width * UIScreen.main.scale, height: height * UIScreen.main.scale)
     }
     
-    var doubledRadiusRect: CGRect {
-        return CGRect(origin: CGPoint(x: -width, y: 0), size: CGSize(width: width * 2, height: height * 2))
+    var pythagRect: CGRect {
+        let pythag = sqrt(Double((width * width) + (height * height)))
+        return CGRect(origin: CGPoint(x: -pythag, y: -pythag), size: CGSize(width: pythag * 2, height: pythag * 2))
     }
 }
 
