@@ -5,8 +5,12 @@ class DrawView: UIImageView {
     var lastPoint = CGPoint.zero
     var brushColor = UIColor.white.cgColor
     var brushWidth: CGFloat = 25
-    var opacity: CGFloat = 1
     var swiped = false
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        brushWidth = frame.size.retinaSize.width / 24
+    }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         swiped = false
