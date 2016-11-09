@@ -12,13 +12,13 @@ class Kaleidoscope {
         guard let cgImage = sourceImage.cgImage else { return nil }
         
         let ciImage = CIImage(cgImage: cgImage)
-        let center = CIVector(x: sourceImage.size.width / 2, y: sourceImage.size.height / 2)
+        let center = CIVector(x: 0, y: sourceImage.size.height)
         ciFilter.setValue(ciImage, forKey: kCIInputImageKey)
         ciFilter.setValue(55, forKey: kCIInputAngleKey)
         ciFilter.setValue(center, forKey: kCIInputCenterKey)
         
         guard let outputImage = ciFilter.outputImage else { return nil }
-        guard let resultCGImage = ciContext.createCGImage(outputImage, from: ciImage.extent) else { return nil }
+        guard let resultCGImage = ciContext.createCGImage(outputImage, from: sourceImage.size.doubledRadiusRect) else { return nil }
         
         lastRender = UIImage(cgImage: resultCGImage)
         

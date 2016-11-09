@@ -4,16 +4,18 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="fEo-jy-wvo">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1X0-0U-IyJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="3lH-hD-nsC" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="AvE-1A-ge3">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AvE-1A-ge3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -22,7 +24,6 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="nXY-mP-y7s"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1X0-0U-IyJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-724" y="32"/>
         </scene>
@@ -39,16 +40,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mJd-o3-enf" customClass="DrawView" customModule="ChristmasCard" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="64" width="568" height="256"/>
+                                <rect key="frame" x="292" y="64" width="256" height="256"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="mJd-o3-enf" secondAttribute="height" multiplier="1:1" id="YmM-Wx-MBe"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="mJd-o3-enf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Ma4-TX-uGA"/>
-                            <constraint firstItem="mJd-o3-enf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Vvz-RQ-Zgw"/>
-                            <constraint firstAttribute="trailing" secondItem="mJd-o3-enf" secondAttribute="trailing" id="Y6B-ja-XiV"/>
-                            <constraint firstItem="mJd-o3-enf" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="x3s-Vo-v2h"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mJd-o3-enf" secondAttribute="trailing" id="3fI-he-PNa"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mJd-o3-enf" secondAttribute="bottom" id="rkV-hr-G21"/>
+                            <constraint firstItem="mJd-o3-enf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="tA5-rY-13L"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Draw a shape below" id="xW7-Pm-8HR">
@@ -97,6 +100,7 @@
                             <constraint firstAttribute="trailing" secondItem="mo6-tD-x8V" secondAttribute="trailing" id="lXE-6S-tBh"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="sC0-jJ-Uwz"/>
                     <connections>
                         <outlet property="sceneView" destination="mo6-tD-x8V" id="Qhj-JA-qXF"/>
                     </connections>
