@@ -1,0 +1,332 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A566FDD51DD253B1004BE55C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566FDD41DD253B1004BE55C /* AppDelegate.swift */; };
+		A566FDD71DD253B1004BE55C /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566FDD61DD253B1004BE55C /* DrawViewController.swift */; };
+		A566FDDA1DD253B1004BE55C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A566FDD81DD253B1004BE55C /* Main.storyboard */; };
+		A566FDDC1DD253B1004BE55C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A566FDDB1DD253B1004BE55C /* Assets.xcassets */; };
+		A566FDDF1DD253B1004BE55C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A566FDDD1DD253B1004BE55C /* LaunchScreen.storyboard */; };
+		A566FDE71DD2544F004BE55C /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566FDE61DD2544F004BE55C /* DrawView.swift */; };
+		A58B172F1DD26CCE00C12C02 /* Kaleidoscope.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58B172E1DD26CCE00C12C02 /* Kaleidoscope.swift */; };
+		A58B17311DD2810400C12C02 /* Extends.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58B17301DD2810400C12C02 /* Extends.swift */; };
+		A58B17331DD2823F00C12C02 /* SnowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58B17321DD2823F00C12C02 /* SnowViewController.swift */; };
+		A58B17351DD2831200C12C02 /* SnowParticles.sks in Resources */ = {isa = PBXBuildFile; fileRef = A58B17341DD2831200C12C02 /* SnowParticles.sks */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A566FDD11DD253B1004BE55C /* ChristmasCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChristmasCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A566FDD41DD253B1004BE55C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A566FDD61DD253B1004BE55C /* DrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
+		A566FDD91DD253B1004BE55C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A566FDDB1DD253B1004BE55C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A566FDDE1DD253B1004BE55C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A566FDE01DD253B1004BE55C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A566FDE61DD2544F004BE55C /* DrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
+		A58B172E1DD26CCE00C12C02 /* Kaleidoscope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kaleidoscope.swift; sourceTree = "<group>"; };
+		A58B17301DD2810400C12C02 /* Extends.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extends.swift; sourceTree = "<group>"; };
+		A58B17321DD2823F00C12C02 /* SnowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowViewController.swift; sourceTree = "<group>"; };
+		A58B17341DD2831200C12C02 /* SnowParticles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SnowParticles.sks; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A566FDCE1DD253B1004BE55C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A566FDC81DD253B1004BE55C = {
+			isa = PBXGroup;
+			children = (
+				A566FDD31DD253B1004BE55C /* ChristmasCard */,
+				A566FDD21DD253B1004BE55C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A566FDD21DD253B1004BE55C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A566FDD11DD253B1004BE55C /* ChristmasCard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A566FDD31DD253B1004BE55C /* ChristmasCard */ = {
+			isa = PBXGroup;
+			children = (
+				A566FDD41DD253B1004BE55C /* AppDelegate.swift */,
+				A566FDD61DD253B1004BE55C /* DrawViewController.swift */,
+				A58B17321DD2823F00C12C02 /* SnowViewController.swift */,
+				A58B17341DD2831200C12C02 /* SnowParticles.sks */,
+				A566FDE61DD2544F004BE55C /* DrawView.swift */,
+				A58B17301DD2810400C12C02 /* Extends.swift */,
+				A566FDD81DD253B1004BE55C /* Main.storyboard */,
+				A58B172E1DD26CCE00C12C02 /* Kaleidoscope.swift */,
+				A566FDDB1DD253B1004BE55C /* Assets.xcassets */,
+				A566FDDD1DD253B1004BE55C /* LaunchScreen.storyboard */,
+				A566FDE01DD253B1004BE55C /* Info.plist */,
+			);
+			path = ChristmasCard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A566FDD01DD253B1004BE55C /* ChristmasCard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A566FDE31DD253B1004BE55C /* Build configuration list for PBXNativeTarget "ChristmasCard" */;
+			buildPhases = (
+				A566FDCD1DD253B1004BE55C /* Sources */,
+				A566FDCE1DD253B1004BE55C /* Frameworks */,
+				A566FDCF1DD253B1004BE55C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChristmasCard;
+			productName = ChristmasCard;
+			productReference = A566FDD11DD253B1004BE55C /* ChristmasCard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A566FDC91DD253B1004BE55C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = pixlwave;
+				TargetAttributes = {
+					A566FDD01DD253B1004BE55C = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = NU8A5Y875P;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A566FDCC1DD253B1004BE55C /* Build configuration list for PBXProject "ChristmasCard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A566FDC81DD253B1004BE55C;
+			productRefGroup = A566FDD21DD253B1004BE55C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A566FDD01DD253B1004BE55C /* ChristmasCard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A566FDCF1DD253B1004BE55C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A566FDDF1DD253B1004BE55C /* LaunchScreen.storyboard in Resources */,
+				A566FDDC1DD253B1004BE55C /* Assets.xcassets in Resources */,
+				A58B17351DD2831200C12C02 /* SnowParticles.sks in Resources */,
+				A566FDDA1DD253B1004BE55C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A566FDCD1DD253B1004BE55C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A58B172F1DD26CCE00C12C02 /* Kaleidoscope.swift in Sources */,
+				A566FDD71DD253B1004BE55C /* DrawViewController.swift in Sources */,
+				A58B17311DD2810400C12C02 /* Extends.swift in Sources */,
+				A566FDD51DD253B1004BE55C /* AppDelegate.swift in Sources */,
+				A566FDE71DD2544F004BE55C /* DrawView.swift in Sources */,
+				A58B17331DD2823F00C12C02 /* SnowViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A566FDD81DD253B1004BE55C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A566FDD91DD253B1004BE55C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A566FDDD1DD253B1004BE55C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A566FDDE1DD253B1004BE55C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A566FDE11DD253B1004BE55C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A566FDE21DD253B1004BE55C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A566FDE41DD253B1004BE55C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NU8A5Y875P;
+				INFOPLIST_FILE = ChristmasCard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.pixlwave.ChristmasCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A566FDE51DD253B1004BE55C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NU8A5Y875P;
+				INFOPLIST_FILE = ChristmasCard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.pixlwave.ChristmasCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A566FDCC1DD253B1004BE55C /* Build configuration list for PBXProject "ChristmasCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A566FDE11DD253B1004BE55C /* Debug */,
+				A566FDE21DD253B1004BE55C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A566FDE31DD253B1004BE55C /* Build configuration list for PBXNativeTarget "ChristmasCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A566FDE41DD253B1004BE55C /* Debug */,
+				A566FDE51DD253B1004BE55C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A566FDC91DD253B1004BE55C /* Project object */;
+}

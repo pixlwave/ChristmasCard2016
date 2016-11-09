@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3lH-hD-nsC">
+    <device id="retina4_0" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="fEo-jy-wvo">
+            <objects>
+                <navigationController id="3lH-hD-nsC" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="AvE-1A-ge3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="nXY-mP-y7s"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1X0-0U-IyJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-724" y="32"/>
+        </scene>
+        <!--Draw a shape below-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="DrawViewController" customModule="ChristmasCard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mJd-o3-enf" customClass="DrawView" customModule="ChristmasCard" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="568" height="256"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mJd-o3-enf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Ma4-TX-uGA"/>
+                            <constraint firstItem="mJd-o3-enf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Vvz-RQ-Zgw"/>
+                            <constraint firstAttribute="trailing" secondItem="mJd-o3-enf" secondAttribute="trailing" id="Y6B-ja-XiV"/>
+                            <constraint firstItem="mJd-o3-enf" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="x3s-Vo-v2h"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Draw a shape below" id="xW7-Pm-8HR">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="ci3-Rx-JmA"/>
+                        <barButtonItem key="leftBarButtonItem" title="Clear" id="kTV-PW-Xoh">
+                            <connections>
+                                <action selector="clearDrawing:" destination="BYZ-38-t0r" id="up5-NR-dOq"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="Ieq-Md-dVp">
+                            <connections>
+                                <segue destination="cV8-NY-8RS" kind="show" id="h32-zf-8tu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="drawView" destination="mJd-o3-enf" id="aWv-SY-Z18"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.74647887323944" y="31.875"/>
+        </scene>
+        <!--Snow View Controller-->
+        <scene sceneID="slf-eF-YrI">
+            <objects>
+                <viewController id="cV8-NY-8RS" customClass="SnowViewController" customModule="ChristmasCard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fdc-HO-WJc"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rhh-6p-mtO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="R4w-4R-iFF">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mo6-tD-x8V" customClass="SKView">
+                                <rect key="frame" x="0.0" y="64" width="568" height="256"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mo6-tD-x8V" firstAttribute="leading" secondItem="R4w-4R-iFF" secondAttribute="leading" id="2sW-f4-cB1"/>
+                            <constraint firstItem="mo6-tD-x8V" firstAttribute="top" secondItem="fdc-HO-WJc" secondAttribute="bottom" id="5EX-DH-lXI"/>
+                            <constraint firstItem="mo6-tD-x8V" firstAttribute="bottom" secondItem="Rhh-6p-mtO" secondAttribute="top" id="dlq-UL-0Ox"/>
+                            <constraint firstAttribute="trailing" secondItem="mo6-tD-x8V" secondAttribute="trailing" id="lXE-6S-tBh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="mo6-tD-x8V" id="Qhj-JA-qXF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g9b-UN-sDv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="804.92957746478874" y="31.875"/>
+        </scene>
+    </scenes>
+</document>
