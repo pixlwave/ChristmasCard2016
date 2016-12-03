@@ -1,5 +1,6 @@
 import UIKit
 import SpriteKit
+import SceneKit
 
 class SnowViewController: UIViewController {
     
@@ -9,7 +10,7 @@ class SnowViewController: UIViewController {
     
     @IBOutlet weak var sceneView: SKView!
     @IBOutlet weak var snowflakeOverlayView: UIView!
-    @IBOutlet weak var snowflakeImageView: UIImageView!
+    @IBOutlet weak var snowflakeSceneView: SCNView!
     @IBOutlet weak var restartButton: UIButton!
     
     override func viewDidLoad() {
@@ -19,7 +20,11 @@ class SnowViewController: UIViewController {
         snowflakeOverlayView.addGestureRecognizer(tapRecognizer)
         snowflakeOverlayView.backgroundColor = blueBackground
         
-        snowflakeImageView.image = Kaleidoscope.lastRender
+        if let snowflakeImage = Kaleidoscope.lastRender {
+            snowflakeSceneView.scene = SnowflakeScene(image: snowflakeImage)
+            snowflakeSceneView.scene?.background.contents = blueBackground
+        }
+        
         setupSnowScene()
     }
     

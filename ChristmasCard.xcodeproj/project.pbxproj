@@ -19,6 +19,7 @@
 		A58B17351DD2831200C12C02 /* SnowParticles.sks in Resources */ = {isa = PBXBuildFile; fileRef = A58B17341DD2831200C12C02 /* SnowParticles.sks */; };
 		A59F2F511DF30D0B00B6CA3E /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A59F2F491DF30CE500B6CA3E /* SVProgressHUD.framework */; };
 		A59F2F521DF30D0B00B6CA3E /* SVProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A59F2F491DF30CE500B6CA3E /* SVProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A59F2F581DF3263B00B6CA3E /* SnowflakeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59F2F571DF3263B00B6CA3E /* SnowflakeScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		A58B17341DD2831200C12C02 /* SnowParticles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SnowParticles.sks; sourceTree = "<group>"; };
 		A59F2F431DF30CE400B6CA3E /* SVProgressHUD.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SVProgressHUD.xcodeproj; path = SVProgressHUD/SVProgressHUD.xcodeproj; sourceTree = "<group>"; };
 		A59F2F561DF30D8B00B6CA3E /* Bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging.h; sourceTree = SOURCE_ROOT; };
+		A59F2F571DF3263B00B6CA3E /* SnowflakeScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowflakeScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,13 +112,14 @@
 			isa = PBXGroup;
 			children = (
 				A566FDD41DD253B1004BE55C /* AppDelegate.swift */,
+				A58B17301DD2810400C12C02 /* Extends.swift */,
 				A566FDD61DD253B1004BE55C /* DrawViewController.swift */,
 				A58B17321DD2823F00C12C02 /* SnowViewController.swift */,
-				A58B17341DD2831200C12C02 /* SnowParticles.sks */,
 				A566FDE61DD2544F004BE55C /* DrawView.swift */,
-				A58B17301DD2810400C12C02 /* Extends.swift */,
-				A566FDD81DD253B1004BE55C /* Main.storyboard */,
 				A58B172E1DD26CCE00C12C02 /* Kaleidoscope.swift */,
+				A59F2F571DF3263B00B6CA3E /* SnowflakeScene.swift */,
+				A58B17341DD2831200C12C02 /* SnowParticles.sks */,
+				A566FDD81DD253B1004BE55C /* Main.storyboard */,
 				A566FDDB1DD253B1004BE55C /* Assets.xcassets */,
 				A566FDDD1DD253B1004BE55C /* LaunchScreen.storyboard */,
 				A566FDE01DD253B1004BE55C /* Info.plist */,
@@ -237,6 +240,7 @@
 				A58B17311DD2810400C12C02 /* Extends.swift in Sources */,
 				A566FDD51DD253B1004BE55C /* AppDelegate.swift in Sources */,
 				A566FDE71DD2544F004BE55C /* DrawView.swift in Sources */,
+				A59F2F581DF3263B00B6CA3E /* SnowflakeScene.swift in Sources */,
 				A58B17331DD2823F00C12C02 /* SnowViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
