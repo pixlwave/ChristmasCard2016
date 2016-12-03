@@ -114,48 +114,38 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mo6-tD-x8V" customClass="SKView">
                                 <rect key="frame" x="0.0" y="20" width="568" height="300"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yxH-7S-KUP">
-                                        <rect key="frame" x="57" y="15" width="454" height="270"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your drawing has been transformed into a snowflake!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnB-5E-eOD">
-                                                <rect key="frame" x="24.5" y="8" width="405" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="hyt-NR-zsX">
-                                                <rect key="frame" x="129.5" y="37" width="196" height="196"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="hyt-NR-zsX" secondAttribute="height" multiplier="1:1" id="Pdk-N7-FcW"/>
-                                                </constraints>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to continue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ah3-hr-PEP">
-                                                <rect key="frame" x="167.5" y="241" width="119" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
-                                        <constraints>
-                                            <constraint firstItem="hyt-NR-zsX" firstAttribute="centerX" secondItem="yxH-7S-KUP" secondAttribute="centerX" id="MOG-fu-uKc"/>
-                                            <constraint firstItem="hyt-NR-zsX" firstAttribute="top" secondItem="pnB-5E-eOD" secondAttribute="bottom" constant="8" symbolic="YES" id="Vhw-eo-Gjc"/>
-                                            <constraint firstItem="ah3-hr-PEP" firstAttribute="centerX" secondItem="yxH-7S-KUP" secondAttribute="centerX" id="cIt-vz-6wD"/>
-                                            <constraint firstItem="pnB-5E-eOD" firstAttribute="top" secondItem="yxH-7S-KUP" secondAttribute="top" constant="8" id="jRB-Hd-Nb2"/>
-                                            <constraint firstItem="pnB-5E-eOD" firstAttribute="centerX" secondItem="yxH-7S-KUP" secondAttribute="centerX" id="kLz-90-s4H"/>
-                                            <constraint firstItem="ah3-hr-PEP" firstAttribute="top" secondItem="hyt-NR-zsX" secondAttribute="bottom" constant="8" symbolic="YES" id="kju-Uy-aD9"/>
-                                            <constraint firstAttribute="bottom" secondItem="ah3-hr-PEP" secondAttribute="bottom" constant="8" id="nsb-wl-fdq"/>
-                                            <constraint firstItem="hyt-NR-zsX" firstAttribute="centerX" secondItem="yxH-7S-KUP" secondAttribute="centerX" id="p7f-E5-gXL"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yxH-7S-KUP">
+                                <rect key="frame" x="0.0" y="20" width="568" height="300"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your drawing has been transformed into a snowflake!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnB-5E-eOD">
+                                        <rect key="frame" x="81.5" y="8" width="405" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="hyt-NR-zsX">
+                                        <rect key="frame" x="171" y="37" width="226" height="226"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="hyt-NR-zsX" secondAttribute="height" multiplier="1:1" id="Pdk-N7-FcW"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to continue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ah3-hr-PEP">
+                                        <rect key="frame" x="224.5" y="271" width="119" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstItem="yxH-7S-KUP" firstAttribute="width" secondItem="mo6-tD-x8V" secondAttribute="width" multiplier="0.8" id="H2W-Qk-kFJ"/>
-                                    <constraint firstItem="yxH-7S-KUP" firstAttribute="centerY" secondItem="mo6-tD-x8V" secondAttribute="centerY" id="Hr0-oH-dq2"/>
-                                    <constraint firstItem="yxH-7S-KUP" firstAttribute="height" secondItem="mo6-tD-x8V" secondAttribute="height" multiplier="0.9" id="UC6-pC-WVd"/>
-                                    <constraint firstItem="yxH-7S-KUP" firstAttribute="centerX" secondItem="mo6-tD-x8V" secondAttribute="centerX" id="tzQ-Uu-Bnk"/>
+                                    <constraint firstItem="hyt-NR-zsX" firstAttribute="centerX" secondItem="yxH-7S-KUP" secondAttribute="centerX" id="MOG-fu-uKc"/>
+                                    <constraint firstItem="hyt-NR-zsX" firstAttribute="top" secondItem="pnB-5E-eOD" secondAttribute="bottom" constant="8" symbolic="YES" id="Vhw-eo-Gjc"/>
+                                    <constraint firstItem="ah3-hr-PEP" firstAttribute="centerX" secondItem="yxH-7S-KUP" secondAttribute="centerX" id="cIt-vz-6wD"/>
+                                    <constraint firstItem="pnB-5E-eOD" firstAttribute="top" secondItem="yxH-7S-KUP" secondAttribute="top" constant="8" id="jRB-Hd-Nb2"/>
+                                    <constraint firstItem="pnB-5E-eOD" firstAttribute="centerX" secondItem="yxH-7S-KUP" secondAttribute="centerX" id="kLz-90-s4H"/>
+                                    <constraint firstItem="ah3-hr-PEP" firstAttribute="top" secondItem="hyt-NR-zsX" secondAttribute="bottom" constant="8" symbolic="YES" id="kju-Uy-aD9"/>
+                                    <constraint firstAttribute="bottom" secondItem="ah3-hr-PEP" secondAttribute="bottom" constant="8" id="nsb-wl-fdq"/>
                                 </constraints>
                             </view>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ExO-y8-ofK">
@@ -170,10 +160,14 @@
                         <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="mo6-tD-x8V" firstAttribute="leading" secondItem="R4w-4R-iFF" secondAttribute="leading" id="2sW-f4-cB1"/>
+                            <constraint firstItem="yxH-7S-KUP" firstAttribute="leading" secondItem="R4w-4R-iFF" secondAttribute="leading" id="4wQ-V8-eNe"/>
                             <constraint firstItem="mo6-tD-x8V" firstAttribute="top" secondItem="fdc-HO-WJc" secondAttribute="bottom" id="5EX-DH-lXI"/>
                             <constraint firstItem="mo6-tD-x8V" firstAttribute="leading" secondItem="ExO-y8-ofK" secondAttribute="leading" constant="-20" id="VUP-8q-5p3"/>
                             <constraint firstItem="mo6-tD-x8V" firstAttribute="bottom" secondItem="Rhh-6p-mtO" secondAttribute="top" id="dlq-UL-0Ox"/>
+                            <constraint firstItem="Rhh-6p-mtO" firstAttribute="top" secondItem="yxH-7S-KUP" secondAttribute="bottom" id="fGz-GL-4wf"/>
+                            <constraint firstItem="yxH-7S-KUP" firstAttribute="top" secondItem="fdc-HO-WJc" secondAttribute="bottom" id="ip5-mE-50G"/>
                             <constraint firstAttribute="trailing" secondItem="mo6-tD-x8V" secondAttribute="trailing" id="lXE-6S-tBh"/>
+                            <constraint firstAttribute="trailing" secondItem="yxH-7S-KUP" secondAttribute="trailing" id="nWr-ql-Xyg"/>
                             <constraint firstItem="Rhh-6p-mtO" firstAttribute="top" secondItem="ExO-y8-ofK" secondAttribute="baseline" constant="20" id="naH-aA-yYh"/>
                         </constraints>
                     </view>

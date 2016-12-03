@@ -44,6 +44,7 @@ class DrawViewController: UIViewController {
     }
 
     @IBAction func clearDrawing() {
+        okButton.isEnabled = false
         drawView.image = nil
         Kaleidoscope.lastRender = nil
     }

@@ -5,6 +5,7 @@ class SnowViewController: UIViewController {
     
     var snowScene: SKScene!
     let snowParticlesFile = Bundle.main.path(forResource: "SnowParticles", ofType: "sks")!
+    let blueBackground = SKColor(red: 0.35, green: 0.75, blue: 1.000, alpha: 1.0)
     
     @IBOutlet weak var sceneView: SKView!
     @IBOutlet weak var snowflakeOverlayView: UIView!
@@ -16,6 +17,7 @@ class SnowViewController: UIViewController {
         
         let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(letItSnow))
         snowflakeOverlayView.addGestureRecognizer(tapRecognizer)
+        snowflakeOverlayView.backgroundColor = blueBackground
         
         snowflakeImageView.image = Kaleidoscope.lastRender
         setupSnowScene()
@@ -23,7 +25,7 @@ class SnowViewController: UIViewController {
     
     func setupSnowScene() {
         snowScene = SKScene(size: sceneView.frame.size)
-        snowScene.backgroundColor = SKColor(red: 0.35, green: 0.75, blue: 1.000, alpha: 1.0)
+        snowScene.backgroundColor = blueBackground
         
         let happyChristmas = SKLabelNode(text: "Happy Christmas")
         happyChristmas.position = CGPoint(x: snowScene.frame.midX, y: snowScene.frame.midY)
