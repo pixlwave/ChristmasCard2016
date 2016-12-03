@@ -6,7 +6,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,17 +23,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mJd-o3-enf" customClass="DrawView" customModule="ChristmasCard" customModuleProvider="target">
-                                <rect key="frame" x="264" y="28" width="284" height="284"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="276" y="28" width="284" height="284"/>
+                                <color key="backgroundColor" red="0.15294117647058825" green="0.59999999999999998" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="mJd-o3-enf" secondAttribute="height" multiplier="1:1" id="YmM-Wx-MBe"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iru-Hq-YWr">
-                                <rect key="frame" x="16" y="28" width="240" height="284"/>
+                                <rect key="frame" x="8" y="28" width="260" height="284"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biE-Vn-Ufz">
-                                        <rect key="frame" x="97.5" y="125.5" width="46" height="33"/>
+                                        <rect key="frame" x="107.5" y="125.5" width="46" height="33"/>
                                         <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="17"/>
                                         <state key="normal" title="Clear"/>
                                         <connections>
@@ -42,15 +41,15 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTw-H5-Izb">
-                                        <rect key="frame" x="105" y="196.5" width="30" height="33"/>
+                                        <rect key="frame" x="115" y="196.5" width="30" height="33"/>
                                         <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="17"/>
                                         <state key="normal" title="OK"/>
                                         <connections>
                                             <action selector="renderSnowflake" destination="BYZ-38-t0r" eventType="touchUpInside" id="iPz-JX-r3M"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Draw a shape in the black box" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIX-bI-BRu">
-                                        <rect key="frame" x="8.5" y="50" width="224.5" height="42"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Draw a shape in the box on the right. Even a squiggle will do." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIX-bI-BRu">
+                                        <rect key="frame" x="4" y="40" width="252" height="62.5"/>
                                         <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -59,25 +58,25 @@
                                 <constraints>
                                     <constraint firstItem="sTw-H5-Izb" firstAttribute="centerY" secondItem="Iru-Hq-YWr" secondAttribute="centerY" multiplier="3/2" id="Dwu-RA-T8Y"/>
                                     <constraint firstItem="biE-Vn-Ufz" firstAttribute="centerY" secondItem="Iru-Hq-YWr" secondAttribute="centerY" id="SND-Uc-Mjm"/>
-                                    <constraint firstItem="dIX-bI-BRu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Iru-Hq-YWr" secondAttribute="leading" id="UcK-yb-bOU"/>
+                                    <constraint firstItem="dIX-bI-BRu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Iru-Hq-YWr" secondAttribute="leading" constant="4" id="UcK-yb-bOU"/>
                                     <constraint firstItem="biE-Vn-Ufz" firstAttribute="centerX" secondItem="Iru-Hq-YWr" secondAttribute="centerX" id="WY6-cP-QII"/>
                                     <constraint firstItem="sTw-H5-Izb" firstAttribute="centerX" secondItem="Iru-Hq-YWr" secondAttribute="centerX" id="bUu-CU-HJX"/>
                                     <constraint firstItem="dIX-bI-BRu" firstAttribute="centerY" secondItem="Iru-Hq-YWr" secondAttribute="centerY" multiplier="1/2" id="inJ-q3-P6Q"/>
                                     <constraint firstItem="dIX-bI-BRu" firstAttribute="centerX" secondItem="Iru-Hq-YWr" secondAttribute="centerX" id="m9O-LR-hYm"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dIX-bI-BRu" secondAttribute="trailing" id="t8V-ev-ptE"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dIX-bI-BRu" secondAttribute="trailing" constant="4" id="t8V-ev-ptE"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.34901960784313724" green="0.74901960784313726" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.89411764705882346" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="mJd-o3-enf" secondAttribute="trailing" id="3fI-he-PNa"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Iru-Hq-YWr" secondAttribute="bottom" constant="8" symbolic="YES" id="Aj2-HB-RZG"/>
-                            <constraint firstItem="mJd-o3-enf" firstAttribute="leading" secondItem="Iru-Hq-YWr" secondAttribute="trailing" constant="8" symbolic="YES" id="Jmi-HN-nEV"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mJd-o3-enf" secondAttribute="bottom" constant="8" symbolic="YES" id="rkV-hr-G21"/>
-                            <constraint firstItem="mJd-o3-enf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="tA5-rY-13L"/>
-                            <constraint firstItem="Iru-Hq-YWr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-4" id="uTm-eO-35d"/>
-                            <constraint firstItem="Iru-Hq-YWr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="wh3-wG-5i3"/>
+                            <constraint firstAttribute="trailing" secondItem="mJd-o3-enf" secondAttribute="trailing" constant="8" id="3fI-he-PNa"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Iru-Hq-YWr" secondAttribute="bottom" constant="8" id="Aj2-HB-RZG"/>
+                            <constraint firstItem="mJd-o3-enf" firstAttribute="leading" secondItem="Iru-Hq-YWr" secondAttribute="trailing" constant="8" id="Jmi-HN-nEV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mJd-o3-enf" secondAttribute="bottom" constant="8" id="rkV-hr-G21"/>
+                            <constraint firstItem="mJd-o3-enf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="tA5-rY-13L"/>
+                            <constraint firstItem="Iru-Hq-YWr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="uTm-eO-35d"/>
+                            <constraint firstItem="Iru-Hq-YWr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="wh3-wG-5i3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Draw a shape below" id="xW7-Pm-8HR">
