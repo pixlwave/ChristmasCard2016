@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A524390A1DF3504D008A10DA /* Jingle Bells.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A52439081DF34F5E008A10DA /* Jingle Bells.m4a */; };
 		A566FDD51DD253B1004BE55C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566FDD41DD253B1004BE55C /* AppDelegate.swift */; };
 		A566FDD71DD253B1004BE55C /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566FDD61DD253B1004BE55C /* DrawViewController.swift */; };
 		A566FDDA1DD253B1004BE55C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A566FDD81DD253B1004BE55C /* Main.storyboard */; };
@@ -61,6 +62,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A52439081DF34F5E008A10DA /* Jingle Bells.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jingle Bells.m4a"; sourceTree = "<group>"; };
 		A566FDD11DD253B1004BE55C /* ChristmasCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChristmasCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A566FDD41DD253B1004BE55C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A566FDD61DD253B1004BE55C /* DrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				A58B17341DD2831200C12C02 /* SnowParticles.sks */,
 				A566FDD81DD253B1004BE55C /* Main.storyboard */,
 				A566FDDB1DD253B1004BE55C /* Assets.xcassets */,
+				A52439081DF34F5E008A10DA /* Jingle Bells.m4a */,
 				A566FDDD1DD253B1004BE55C /* LaunchScreen.storyboard */,
 				A566FDE01DD253B1004BE55C /* Info.plist */,
 			);
@@ -221,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A524390A1DF3504D008A10DA /* Jingle Bells.m4a in Resources */,
 				A566FDDF1DD253B1004BE55C /* LaunchScreen.storyboard in Resources */,
 				A566FDDC1DD253B1004BE55C /* Assets.xcassets in Resources */,
 				A58B17351DD2831200C12C02 /* SnowParticles.sks in Resources */,

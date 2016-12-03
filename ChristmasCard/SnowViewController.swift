@@ -1,12 +1,14 @@
 import UIKit
 import SpriteKit
 import SceneKit
+import AVFoundation
 
 class SnowViewController: UIViewController {
     
     var snowScene: SKScene!
     let snowParticlesFile = Bundle.main.path(forResource: "SnowParticles", ofType: "sks")!
     let blueBackground = SKColor(red: 0.35, green: 0.75, blue: 1.000, alpha: 1.0)
+    let musicPlayer = AVPlayer(url: Bundle.main.url(forResource: "Jingle Bells", withExtension: "m4a")!)
     
     @IBOutlet weak var sceneView: SKView!
     @IBOutlet weak var snowflakeOverlayView: UIView!
@@ -53,6 +55,7 @@ class SnowViewController: UIViewController {
         }
         
         sceneView.presentScene(snowScene)
+        musicPlayer.play()
         restartButton.isHidden = false
     }
     
