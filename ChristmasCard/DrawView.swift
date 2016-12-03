@@ -9,7 +9,7 @@ class DrawView: UIImageView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        brushWidth = frame.size.retinaSize.width / 24
+        brushWidth = frame.size.retinaSize.width / 16
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -33,10 +33,6 @@ class DrawView: UIImageView {
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         if !swiped {
             drawLine(from: lastPoint, to: lastPoint)
-        } else {
-            if let image = image, let kaleidoscope = Kaleidoscope.render(from: image) {
-                self.image = kaleidoscope
-            }
         }
     }
     
@@ -60,6 +56,7 @@ class DrawView: UIImageView {
             
             UIGraphicsEndImageContext()
         }
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "LineDrawn"), object: nil)
     }
     
 }
