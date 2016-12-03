@@ -376,7 +376,7 @@
 				INFOPLIST_FILE = ChristmasCard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = uk.pixlwave.ChristmasCard;
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.pixlwave.Decimal-Clock";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = Bridging.h;
 				SWIFT_VERSION = 3.0;
@@ -391,7 +391,7 @@
 				INFOPLIST_FILE = ChristmasCard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = uk.pixlwave.ChristmasCard;
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.pixlwave.Decimal-Clock";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = Bridging.h;
 				SWIFT_VERSION = 3.0;
