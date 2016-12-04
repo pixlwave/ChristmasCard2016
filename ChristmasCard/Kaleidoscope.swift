@@ -5,7 +5,7 @@ class Kaleidoscope {
     
     static var lastRender: UIImage?
     
-    private static let renderQueue = DispatchQueue(label: "SnowflakeCI", qos: .background)
+    private static let renderQueue = DispatchQueue(label: "SnowflakeCI", qos: .userInitiated)
     
     static let ciContext = CIContext()
 

@@ -175,7 +175,7 @@
                     <navigationItem key="navigationItem" id="sC0-jJ-Uwz"/>
                     <connections>
                         <outlet property="restartButton" destination="ExO-y8-ofK" id="Dzv-aw-rDM"/>
-                        <outlet property="sceneView" destination="mo6-tD-x8V" id="Qhj-JA-qXF"/>
+                        <outlet property="snowSceneView" destination="mo6-tD-x8V" id="IlD-IY-VuR"/>
                         <outlet property="snowflakeOverlayView" destination="yxH-7S-KUP" id="hHC-tU-Aal"/>
                         <outlet property="snowflakeSceneView" destination="rPQ-X4-EsI" id="yFg-0o-vhp"/>
                     </connections>

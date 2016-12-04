@@ -10,7 +10,7 @@ class SnowViewController: UIViewController {
     let blueBackground = SKColor(red: 0.35, green: 0.75, blue: 1.000, alpha: 1.0)
     let musicPlayer = AVPlayer(url: Bundle.main.url(forResource: "Jingle Bells", withExtension: "m4a")!)
     
-    @IBOutlet weak var sceneView: SKView!
+    @IBOutlet weak var snowSceneView: SKView!
     @IBOutlet weak var snowflakeOverlayView: UIView!
     @IBOutlet weak var snowflakeSceneView: SCNView!
     @IBOutlet weak var restartButton: UIButton!
@@ -26,13 +26,17 @@ class SnowViewController: UIViewController {
             snowflakeSceneView.scene = SnowflakeScene(image: snowflakeImage)
             snowflakeSceneView.scene?.background.contents = blueBackground
         }
-        
-        setupSnowScene()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        setupSnowScene()    // after view has been layed out
     }
     
     func setupSnowScene() {
-        snowScene = SKScene(size: sceneView.frame.size)
+        snowScene = SKScene(size: snowSceneView.frame.size)
         snowScene.backgroundColor = blueBackground
+        snowScene.scaleMode = .aspectFill
         
         let happyChristmas = SKLabelNode(text: "Happy Christmas")
         happyChristmas.position = CGPoint(x: snowScene.frame.midX, y: snowScene.frame.midY)
@@ -46,20 +50,27 @@ class SnowViewController: UIViewController {
             snowParticles.position = CGPoint(x: snowScene.frame.midX, y: snowScene.frame.height)
             snowParticles.name = "snowParticles"
             snowParticles.targetNode = snowScene
+            snowParticles.particlePositionRange.dx = snowSceneView.frame.width
+            snowParticles.particleBirthRate = snowSceneView.frame.width / 10
             
             if let snowFlakeTexture = Kaleidoscope.texture {
                 snowParticles.particleTexture = snowFlakeTexture
             }
             
+            if snowSceneView.frame.height > 750 {
+                snowParticles.particleLifetime = 12
+            }
+            
             snowScene.addChild(snowParticles)
         }
         
-        sceneView.presentScene(snowScene)
+        snowSceneView.presentScene(snowScene)
         musicPlayer.play()
         restartButton.isHidden = false
     }
     
     @IBAction func restart() {
+        musicPlayer.pause()
         presentingViewController?.dismiss(animated: true)
     }
 }
