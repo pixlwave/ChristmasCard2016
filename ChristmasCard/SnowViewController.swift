@@ -26,6 +26,8 @@ class SnowViewController: UIViewController {
             snowflakeSceneView.scene = SnowflakeScene(image: snowflakeImage)
             snowflakeSceneView.scene?.background.contents = blueBackground
         }
+        
+        if AppDelegate.hasSeenSnow { restartButton.isHidden = false }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -66,6 +68,7 @@ class SnowViewController: UIViewController {
         
         snowSceneView.presentScene(snowScene)
         musicPlayer.play()
+        AppDelegate.hasSeenSnow = true
         restartButton.isHidden = false
     }
     
