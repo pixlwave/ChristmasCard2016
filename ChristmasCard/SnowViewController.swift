@@ -19,6 +19,7 @@ class SnowViewController: UIViewController {
     @IBOutlet weak var snowflakeOverlayView: UIView!
     @IBOutlet weak var snowflakeSceneView: SCNView!
     @IBOutlet weak var restartButton: UIButton!
+    @IBOutlet weak var shareButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +33,10 @@ class SnowViewController: UIViewController {
             snowflakeSceneView.scene?.background.contents = blueBackground
         }
         
-        if AppDelegate.hasSeenSnow { restartButton.isHidden = false }
+        if AppDelegate.hasSeenSnow {
+            restartButton.isHidden = false
+            shareButton.isHidden = false
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -44,6 +48,12 @@ class SnowViewController: UIViewController {
         snowScene = SKScene(size: snowSceneView.frame.size)
         snowScene.backgroundColor = blueBackground
         snowScene.scaleMode = .aspectFill   // probably not needed now
+        
+        let landscapeNode = SKSpriteNode(imageNamed: "landscape")
+        landscapeNode.size = CGSize(width: snowSceneView.frame.height / 9 * 16, height: snowSceneView.frame.height)     // TODO: use ipad specific image
+        landscapeNode.position = CGPoint(x: snowScene.frame.midX, y: snowScene.frame.midY)
+        
+        snowScene.addChild(landscapeNode)
         
         topLabelNode.position = CGPoint(x: 0, y: snowSceneView.frame.width / 17.5)
         topLabelNode.fontSize = snowSceneView.frame.width / 14
@@ -118,6 +128,7 @@ class SnowViewController: UIViewController {
         musicPlayer.play()
         AppDelegate.hasSeenSnow = true
         restartButton.isHidden = false
+        shareButton.isHidden = false
     }
     
     func updateText() {
@@ -133,6 +144,13 @@ class SnowViewController: UIViewController {
         }
         
         labelScriptIndex += 1
+    }
+    
+    @IBAction func share() {
+        if let snowflakeImage = Kaleidoscope.lastRender {
+            let activityVC = UIActivityViewController(activityItems: ["#DougsChrismasCard", snowflakeImage], applicationActivities: nil)
+            present(activityVC, animated: true, completion: nil)    // TODO: ipad popover
+        }
     }
     
     @IBAction func restart() {

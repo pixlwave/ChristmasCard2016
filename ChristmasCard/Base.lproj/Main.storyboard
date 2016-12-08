@@ -123,8 +123,8 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rPQ-X4-EsI">
-                                        <rect key="frame" x="173.5" y="40" width="222.5" height="222.5"/>
+                                    <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rPQ-X4-EsI">
+                                        <rect key="frame" x="174" y="40" width="221.5" height="221.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="rPQ-X4-EsI" secondAttribute="height" multiplier="1:1" id="AVa-Wi-2Up"/>
                                         </constraints>
@@ -155,6 +155,15 @@
                                     <action selector="restart" destination="cV8-NY-8RS" eventType="touchUpInside" id="vek-lI-2sB"/>
                                 </connections>
                             </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8R9-lH-AHF">
+                                <rect key="frame" x="508" y="284" width="56" height="34"/>
+                                <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="14"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" title="Share"/>
+                                <connections>
+                                    <action selector="share" destination="cV8-NY-8RS" eventType="touchUpInside" id="mE2-BQ-Ay7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.34901960780000002" green="0.74901960779999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.89411764705882346" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -163,6 +172,7 @@
                             <constraint firstItem="yxH-7S-KUP" firstAttribute="leading" secondItem="R4w-4R-iFF" secondAttribute="leading" id="4wQ-V8-eNe"/>
                             <constraint firstItem="mo6-tD-x8V" firstAttribute="top" secondItem="fdc-HO-WJc" secondAttribute="bottom" id="5EX-DH-lXI"/>
                             <constraint firstItem="ah3-hr-PEP" firstAttribute="baseline" secondItem="ExO-y8-ofK" secondAttribute="baseline" id="A27-jh-klk"/>
+                            <constraint firstItem="8R9-lH-AHF" firstAttribute="baseline" secondItem="ExO-y8-ofK" secondAttribute="baseline" id="LJl-lh-Ct7"/>
                             <constraint firstItem="ExO-y8-ofK" firstAttribute="leading" secondItem="mo6-tD-x8V" secondAttribute="leading" constant="4" id="VUP-8q-5p3"/>
                             <constraint firstItem="mo6-tD-x8V" firstAttribute="bottom" secondItem="Rhh-6p-mtO" secondAttribute="top" id="dlq-UL-0Ox"/>
                             <constraint firstItem="Rhh-6p-mtO" firstAttribute="top" secondItem="yxH-7S-KUP" secondAttribute="bottom" id="fGz-GL-4wf"/>
@@ -170,11 +180,13 @@
                             <constraint firstAttribute="trailing" secondItem="mo6-tD-x8V" secondAttribute="trailing" id="lXE-6S-tBh"/>
                             <constraint firstAttribute="trailing" secondItem="yxH-7S-KUP" secondAttribute="trailing" id="nWr-ql-Xyg"/>
                             <constraint firstItem="Rhh-6p-mtO" firstAttribute="top" secondItem="ExO-y8-ofK" secondAttribute="bottom" constant="2" id="naH-aA-yYh"/>
+                            <constraint firstAttribute="trailing" secondItem="8R9-lH-AHF" secondAttribute="trailing" constant="4" id="pyK-GC-5VF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sC0-jJ-Uwz"/>
                     <connections>
                         <outlet property="restartButton" destination="ExO-y8-ofK" id="Dzv-aw-rDM"/>
+                        <outlet property="shareButton" destination="8R9-lH-AHF" id="6dM-sn-0O9"/>
                         <outlet property="snowSceneView" destination="mo6-tD-x8V" id="IlD-IY-VuR"/>
                         <outlet property="snowflakeOverlayView" destination="yxH-7S-KUP" id="hHC-tU-Aal"/>
                         <outlet property="snowflakeSceneView" destination="rPQ-X4-EsI" id="yFg-0o-vhp"/>
