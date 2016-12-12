@@ -46,5 +46,7 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This will allow you to save a snowflake to your photo library.</string>
 </dict>
 </plist>

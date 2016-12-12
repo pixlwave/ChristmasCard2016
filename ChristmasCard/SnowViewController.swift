@@ -41,7 +41,7 @@ class SnowViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        setupSnowScene()    // after view has been layed out
+        if snowScene == nil { setupSnowScene() }    // after view has been layed out
     }
     
     func setupSnowScene() {
@@ -49,7 +49,7 @@ class SnowViewController: UIViewController {
         snowScene.backgroundColor = blueBackground
         snowScene.scaleMode = .aspectFill   // probably not needed now
         
-        let landscapeNode = SKSpriteNode(imageNamed: "landscape")
+        let landscapeNode = SKSpriteNode(imageNamed: "background")
         landscapeNode.size = CGSize(width: snowSceneView.frame.height / 9 * 16, height: snowSceneView.frame.height)     // TODO: use ipad specific image
         landscapeNode.position = CGPoint(x: snowScene.frame.midX, y: snowScene.frame.midY)
         
@@ -149,7 +149,8 @@ class SnowViewController: UIViewController {
     @IBAction func share() {
         if let snowflakeImage = Kaleidoscope.lastRender {
             let activityVC = UIActivityViewController(activityItems: ["#DougsChrismasCard", snowflakeImage], applicationActivities: nil)
-            present(activityVC, animated: true, completion: nil)    // TODO: ipad popover
+            activityVC.popoverPresentationController?.sourceView = shareButton
+            present(activityVC, animated: true, completion: nil)
         }
     }
     
