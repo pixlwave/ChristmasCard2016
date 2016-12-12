@@ -6,11 +6,11 @@ class SnowflakeScene: SCNScene {
         super.init()
         
         let snowflakePlaneFront = SCNPlane(width: 0.9, height: 0.9)
-        snowflakePlaneFront.firstMaterial?.diffuse.contents = Kaleidoscope.lastRender
+        snowflakePlaneFront.firstMaterial?.diffuse.contents = Snowflake.lastRender
         let snowflakeFrontNode = SCNNode(geometry: snowflakePlaneFront)
         
         let snowflakePlaneBack = SCNPlane(width: 0.9, height: 0.9)
-        snowflakePlaneBack.firstMaterial?.diffuse.contents = Kaleidoscope.lastRender
+        snowflakePlaneBack.firstMaterial?.diffuse.contents = Snowflake.lastRender
         let snowflakeBackNode = SCNNode(geometry: snowflakePlaneBack)
         snowflakeBackNode.eulerAngles.y = Float.pi
         

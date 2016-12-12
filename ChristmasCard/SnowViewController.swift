@@ -28,7 +28,7 @@ class SnowViewController: UIViewController {
         snowflakeOverlayView.addGestureRecognizer(tapRecognizer)
         snowflakeOverlayView.backgroundColor = blueBackground
         
-        if let snowflakeImage = Kaleidoscope.lastRender {
+        if let snowflakeImage = Snowflake.lastRender {
             snowflakeSceneView.scene = SnowflakeScene(image: snowflakeImage)
             snowflakeSceneView.scene?.background.contents = blueBackground
         }
@@ -102,7 +102,7 @@ class SnowViewController: UIViewController {
             snowParticles.particlePositionRange.dx = snowSceneView.frame.width
             snowParticles.particleBirthRate = 3
             
-            if let snowFlakeTexture = Kaleidoscope.texture {
+            if let snowFlakeTexture = Snowflake.texture {
                 snowParticles.particleTexture = snowFlakeTexture
             }
             
@@ -147,8 +147,8 @@ class SnowViewController: UIViewController {
     }
     
     @IBAction func share() {
-        if let snowflakeImage = Kaleidoscope.lastRender {
-            let activityVC = UIActivityViewController(activityItems: ["#DougsChrismasCard", snowflakeImage], applicationActivities: nil)
+        if let snowflakeImage = Snowflake.shareImage {
+            let activityVC = UIActivityViewController(activityItems: [snowflakeImage, "I just made my own snowflake using #DougsChrismasCard xmas.pixlwave.uk"], applicationActivities: nil)
             activityVC.popoverPresentationController?.sourceView = shareButton
             present(activityVC, animated: true, completion: nil)
         }

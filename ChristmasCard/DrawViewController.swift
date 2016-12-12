@@ -18,7 +18,7 @@ class DrawViewController: UIViewController {
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         okButton.isEnabled = false
-        drawView.image = Kaleidoscope.lastRender
+        drawView.image = Snowflake.lastRender
         NotificationCenter.default.removeObserver(self)
     }
     
@@ -29,7 +29,7 @@ class DrawViewController: UIViewController {
     @IBAction func renderSnowflake() {
         SVProgressHUD.show(withStatus: "Please wait")
         if let image = drawView.image {
-            Kaleidoscope.render(from: image)
+            Snowflake.render(from: image)
         }
     }
     
@@ -46,7 +46,7 @@ class DrawViewController: UIViewController {
     @IBAction func clearDrawing() {
         okButton.isEnabled = false
         drawView.image = nil
-        Kaleidoscope.lastRender = nil
+        Snowflake.lastRender = nil
     }
 
 }

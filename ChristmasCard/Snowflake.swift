@@ -1,17 +1,16 @@
 import UIKit
 import SpriteKit
 
-class Kaleidoscope {
+class Snowflake {
     
     static var lastRender: UIImage?
     
     private static let renderQueue = DispatchQueue(label: "SnowflakeCI", qos: .userInitiated)
-    
-    static let ciContext = CIContext()
+    private static let ciContext = CIContext()
 
-    static let kaleidoscopeAngle = 0.125 * Double.pi
-    static let kaleidoscopeCenter = CIVector(x: 0, y: 0)
-    static let transformRotation = CGAffineTransform(rotationAngle: CGFloat(0.375 * Double.pi))
+    private static let kaleidoscopeAngle = 0.125 * Double.pi
+    private static let kaleidoscopeCenter = CIVector(x: 0, y: 0)
+    private static let transformRotation = CGAffineTransform(rotationAngle: CGFloat(0.375 * Double.pi))
     
     static func render(from sourceImage: UIImage) {
         renderQueue.async {
@@ -31,9 +30,9 @@ class Kaleidoscope {
             transformFilter.setValue(transformRotation, forKey: "inputTransform")
             guard let transformOutput = transformFilter.outputImage else { return }
             
-            guard let resultCGImage = ciContext.createCGImage(transformOutput, from: sourceImage.size.pythagRect) else { return }
+            guard let snowflakeCGImage = ciContext.createCGImage(transformOutput, from: sourceImage.size.pythagRect) else { return }
             
-            lastRender = UIImage(cgImage: resultCGImage)
+            lastRender = UIImage(cgImage: snowflakeCGImage)
             
             DispatchQueue.main.async {
                 NotificationCenter.default.post(name: NSNotification.Name(rawValue: "SnowflakeDidRender"), object: nil)
@@ -51,6 +50,19 @@ class Kaleidoscope {
         UIGraphicsEndImageContext()
         
         return SKTexture(image: scaledImage)
+    }
+    
+    static var shareImage: UIImage? {
+        guard let lastRender = lastRender else { return nil }
+        
+        UIGraphicsBeginImageContext(lastRender.size)
+        UIColor(red: 0.35, green: 0.75, blue: 1.000, alpha: 1.0).setFill()
+        UIRectFill(CGRect(origin: CGPoint.zero, size: lastRender.size))
+        lastRender.draw(at: CGPoint.zero)
+        guard let image = UIGraphicsGetImageFromCurrentImageContext() else { return nil }
+        UIGraphicsEndImageContext()
+        
+        return image
     }
     
 }

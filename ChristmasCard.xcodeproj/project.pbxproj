@@ -14,7 +14,7 @@
 		A566FDDC1DD253B1004BE55C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A566FDDB1DD253B1004BE55C /* Assets.xcassets */; };
 		A566FDDF1DD253B1004BE55C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A566FDDD1DD253B1004BE55C /* LaunchScreen.storyboard */; };
 		A566FDE71DD2544F004BE55C /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566FDE61DD2544F004BE55C /* DrawView.swift */; };
-		A58B172F1DD26CCE00C12C02 /* Kaleidoscope.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58B172E1DD26CCE00C12C02 /* Kaleidoscope.swift */; };
+		A58B172F1DD26CCE00C12C02 /* Snowflake.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58B172E1DD26CCE00C12C02 /* Snowflake.swift */; };
 		A58B17311DD2810400C12C02 /* Extends.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58B17301DD2810400C12C02 /* Extends.swift */; };
 		A58B17331DD2823F00C12C02 /* SnowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58B17321DD2823F00C12C02 /* SnowViewController.swift */; };
 		A58B17351DD2831200C12C02 /* SnowParticles.sks in Resources */ = {isa = PBXBuildFile; fileRef = A58B17341DD2831200C12C02 /* SnowParticles.sks */; };
@@ -71,7 +71,7 @@
 		A566FDDE1DD253B1004BE55C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A566FDE01DD253B1004BE55C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A566FDE61DD2544F004BE55C /* DrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
-		A58B172E1DD26CCE00C12C02 /* Kaleidoscope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kaleidoscope.swift; sourceTree = "<group>"; };
+		A58B172E1DD26CCE00C12C02 /* Snowflake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snowflake.swift; sourceTree = "<group>"; };
 		A58B17301DD2810400C12C02 /* Extends.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extends.swift; sourceTree = "<group>"; };
 		A58B17321DD2823F00C12C02 /* SnowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowViewController.swift; sourceTree = "<group>"; };
 		A58B17341DD2831200C12C02 /* SnowParticles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SnowParticles.sks; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 				A566FDD61DD253B1004BE55C /* DrawViewController.swift */,
 				A58B17321DD2823F00C12C02 /* SnowViewController.swift */,
 				A566FDE61DD2544F004BE55C /* DrawView.swift */,
-				A58B172E1DD26CCE00C12C02 /* Kaleidoscope.swift */,
+				A58B172E1DD26CCE00C12C02 /* Snowflake.swift */,
 				A59F2F571DF3263B00B6CA3E /* SnowflakeScene.swift */,
 				A58B17341DD2831200C12C02 /* SnowParticles.sks */,
 				A566FDD81DD253B1004BE55C /* Main.storyboard */,
@@ -239,7 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A58B172F1DD26CCE00C12C02 /* Kaleidoscope.swift in Sources */,
+				A58B172F1DD26CCE00C12C02 /* Snowflake.swift in Sources */,
 				A566FDD71DD253B1004BE55C /* DrawViewController.swift in Sources */,
 				A58B17311DD2810400C12C02 /* Extends.swift in Sources */,
 				A566FDD51DD253B1004BE55C /* AppDelegate.swift in Sources */,
@@ -297,6 +297,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -347,6 +348,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
