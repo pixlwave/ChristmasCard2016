@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A516A6041E017B4B004135F6 /* SnowScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A516A6031E017B4B004135F6 /* SnowScene.swift */; };
 		A524390A1DF3504D008A10DA /* Jingle Bells.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A52439081DF34F5E008A10DA /* Jingle Bells.m4a */; };
 		A566FDD51DD253B1004BE55C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566FDD41DD253B1004BE55C /* AppDelegate.swift */; };
 		A566FDD71DD253B1004BE55C /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566FDD61DD253B1004BE55C /* DrawViewController.swift */; };
@@ -62,6 +63,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A516A6031E017B4B004135F6 /* SnowScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowScene.swift; sourceTree = "<group>"; };
 		A52439081DF34F5E008A10DA /* Jingle Bells.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jingle Bells.m4a"; sourceTree = "<group>"; };
 		A566FDD11DD253B1004BE55C /* ChristmasCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChristmasCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A566FDD41DD253B1004BE55C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				A58B17301DD2810400C12C02 /* Extends.swift */,
 				A566FDD61DD253B1004BE55C /* DrawViewController.swift */,
 				A58B17321DD2823F00C12C02 /* SnowViewController.swift */,
+				A516A6031E017B4B004135F6 /* SnowScene.swift */,
 				A566FDE61DD2544F004BE55C /* DrawView.swift */,
 				A58B172E1DD26CCE00C12C02 /* Snowflake.swift */,
 				A59F2F571DF3263B00B6CA3E /* SnowflakeScene.swift */,
@@ -246,6 +249,7 @@
 				A566FDE71DD2544F004BE55C /* DrawView.swift in Sources */,
 				A59F2F581DF3263B00B6CA3E /* SnowflakeScene.swift in Sources */,
 				A58B17331DD2823F00C12C02 /* SnowViewController.swift in Sources */,
+				A516A6041E017B4B004135F6 /* SnowScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

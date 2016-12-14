@@ -1,4 +1,5 @@
 import UIKit
+import SpriteKit
 
 extension CGPoint {
     var retinaPoint: CGPoint {
@@ -21,4 +22,8 @@ extension CGRect {
     var retinaRect: CGRect {
         return CGRect(origin: origin.retinaPoint, size: size.retinaSize)
     }
+}
+
+extension SKColor {
+    static let blueBackground = SKColor(red: 0.35, green: 0.75, blue: 1.000, alpha: 1.0)
 }
