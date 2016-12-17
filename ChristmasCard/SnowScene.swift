@@ -101,6 +101,7 @@ class SnowScene: SKScene {
             bottomLabelNode.text = "Happy New Year"
         case 1:
             topLabelNode.text = "from"
+            topLabelNode.fontSize *= 0.8
             bottomLabelNode.text = "Doug"
         default:
             break
