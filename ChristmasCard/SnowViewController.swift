@@ -57,7 +57,7 @@ class SnowViewController: UIViewController {
     
     @IBAction func share() {
         if let snowflakeImage = Snowflake.shareImage {
-            let activityVC = UIActivityViewController(activityItems: [snowflakeImage, "I just made my own snowflake using #DougsChrismasCard xmas.pixlwave.uk"], applicationActivities: nil)
+            let activityVC = UIActivityViewController(activityItems: [snowflakeImage, "I've just made my own snowflake using #DougsChrismasCard xmas.pixlwave.uk"], applicationActivities: nil)
             activityVC.popoverPresentationController?.sourceView = shareButton
             present(activityVC, animated: true, completion: nil)
         }
